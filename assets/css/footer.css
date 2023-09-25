@@ -1,0 +1,30 @@
+.footer {
+  height: 15rem;
+  padding: 2rem 10rem;
+  display: flex;
+  background: #0e0f34;
+}
+
+.footer .details {
+  width: 30rem;
+}
+
+.footer .details h2 {
+  color: #fff;
+}
+
+.footer .details p {
+  color: #fff;
+}
+
+::placeholder {
+  color: #8a8989;
+  opacity: 1; /* Firefox */
+}
+
+.signature {
+  background: #0e0f34;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
