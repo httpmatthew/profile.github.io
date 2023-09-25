@@ -8,3 +8,8 @@ body {
   max-width: 1320px;
   margin: 0px auto;
 }
+
+.banner .custom-image {
+  margin: 6rem;
+  max-width: 50vw;
+}
