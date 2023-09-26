@@ -1,15 +1,57 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Heebo";
   font-family: "Heebo", sans-serif;
 }
 
-.container {
-  max-width: 1320px;
-  margin: 0px auto;
+.header {
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 16px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.banner .custom-image {
-  margin: 6rem;
-  max-width: 50vw;
+.logo {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+.navigation-var a {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  margin: 16px;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.home-content {
+  max-width: 900px;
+  background-color: greenyellow;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
