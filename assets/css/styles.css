@@ -35,8 +35,8 @@ body {
 }
 
 .home-content {
-  max-width: 900px;
-  background-color: greenyellow;
+  max-width: 600px;
+  align-items: center;
 }
 
 .home-content h1 {
