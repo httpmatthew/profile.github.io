@@ -56,7 +56,24 @@ nav .button a {
   vertical-align: top; /* Align the divs at the top */
   margin-right: 10px; /* Add some space between the divs (optional) */
   margin-top: 8%;
-  margin-bottom: 8%;
-  background-color:     ; /* Background color for the divs */
+  background-color: ; /* Background color for the divs */
   padding: 20px; /* Add padding to the divs (optional) */
+}
+
+.home-content h1 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0;
+}
+
+.home-content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+}
+
+.home-content p {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
 }
