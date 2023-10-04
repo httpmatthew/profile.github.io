@@ -42,68 +42,6 @@ nav a {
   padding: 10px 20px;
 }
 
-nav .switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 1.5em;
-}
-/* Hide default HTML checkbox */
-nav .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-nav .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 1rem 0rem 1rem;
-}
-
-nav .slider:before {
-  position: absolute;
-  content: "";
-  height: 1.5em;
-  width: 1.4em;
-  left: 0em;
-  bottom: 0em;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 1rem 0rem 1rem;
-  border: 3px solid white;
-}
-
-input:checked + .slider {
-  background-color: #72eb67;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(2.2em);
-  background-color: green;
-  box-shadow: 0px 0px 40px 5px #72eb67;
-  border: 3px solid white;
-}
-
-input:checked + .slider::after {
-  content: "|";
-  color: white;
-  position: absolute;
-  right: 0.3rem;
-  transform: rotate(45deg);
-}
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .home,
 .landing-page-image {
   display: inline-block;
@@ -152,38 +90,6 @@ input:checked + .slider::after {
   transition: background 0.3s;
 }
 
-.button::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: var(--tooltip-color);
-  font-size: 0.9rem;
-  color: #111;
-  border-radius: 0.25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
-}
-
-.button::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: var(--tooltip-color);
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-.button::after,
-.button::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
 .text {
   display: flex;
   align-items: center;
@@ -191,8 +97,7 @@ input:checked + .slider::after {
 }
 
 .button-wrapper,
-.text,
-.icon {
+.text {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -203,48 +108,4 @@ input:checked + .slider::after {
 
 .text {
   top: 0;
-}
-
-.text,
-.icon {
-  transition: top 0.5s;
-}
-
-.icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.button:hover {
-  background: #6c18ff;
-}
-
-.button:hover .text {
-  top: -100%;
-}
-
-.button:hover .icon {
-  top: 0;
-}
-
-.button:hover:before,
-.button:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-.button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
