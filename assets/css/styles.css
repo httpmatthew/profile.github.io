@@ -21,7 +21,7 @@ li {
 
 /* Style the navigation bar */
 nav {
-  color: #000;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
   align-items: center; /* Vertically center items */
@@ -38,77 +38,70 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #000f;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
 }
 
-/* nav .switch a {
-  background-color: green;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-} */
-/* The switch - the box around the slider */
 nav .switch {
- font-size: 17px;
- position: relative;
- display: inline-block;
- width: 3.5em;
- height: 1.5em;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.5em;
 }
 /* Hide default HTML checkbox */
 nav .switch input {
- opacity: 0;
- width: 0;
- height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 /* The slider */
 nav .slider {
- position: absolute;
- cursor: pointer;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background-color: #ccc;
- transition: .4s;
- border-radius: 1rem 0rem 1rem;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 1rem 0rem 1rem;
 }
 
 nav .slider:before {
- position: absolute;
- content: "";
- height: 1.5em;
- width: 1.4em;
- left: 0em;
- bottom: 0em;
- background-color: white;
- transition: .4s;
- border-radius: 1rem 0rem 1rem;
- border: 3px solid white;
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.4em;
+  left: 0em;
+  bottom: 0em;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 1rem 0rem 1rem;
+  border: 3px solid white;
 }
 
 input:checked + .slider {
- background-color: #72eb67;
+  background-color: #72eb67;
 }
 
 input:focus + .slider {
- box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
- transform: translateX(2.2em);
- background-color: green;
- box-shadow: 0px 0px 40px 5px #72eb67;
- border: 3px solid white;
+  transform: translateX(2.2em);
+  background-color: green;
+  box-shadow: 0px 0px 40px 5px #72eb67;
+  border: 3px solid white;
 }
 
 input:checked + .slider::after {
- content: "|";
- color: white;
- position: absolute;
- right: 0.3rem;
- transform: rotate(45deg);
+  content: "|";
+  color: white;
+  position: absolute;
+  right: 0.3rem;
+  transform: rotate(45deg);
 }
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .home,
@@ -117,7 +110,7 @@ input:checked + .slider::after {
   width: 45%; /* Adjust the width as needed */
   vertical-align: center; /* Align the divs at the top */
   margin-right: 10px; /* Add some space between the divs (optional) */
-  margin-top: 10%;
+  margin-top: 8%;
   background-color: none; /* Background color for the divs */
   padding: 20px; /* Add padding to the divs (optional) */
 }
@@ -138,7 +131,7 @@ input:checked + .slider::after {
   font-weight: normal;
   font-size: 20px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 5%;
 }
 
 .button {
@@ -167,7 +160,7 @@ input:checked + .slider::after {
   background-color: var(--tooltip-color);
   font-size: 0.9rem;
   color: #111;
-  border-radius: .25em;
+  border-radius: 0.25em;
   line-height: var(--tooltip-height);
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
   left: calc(50% - var(--tooltip-width) / 2);
@@ -175,7 +168,7 @@ input:checked + .slider::after {
 
 .button::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border: 10px solid transparent;
@@ -184,7 +177,8 @@ input:checked + .slider::after {
   bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
 }
 
-.button::after,.button::before {
+.button::after,
+.button::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
@@ -196,7 +190,9 @@ input:checked + .slider::after {
   justify-content: center;
 }
 
-.button-wrapper,.text,.icon {
+.button-wrapper,
+.text,
+.icon {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -206,10 +202,11 @@ input:checked + .slider::after {
 }
 
 .text {
-  top: 0
+  top: 0;
 }
 
-.text,.icon {
+.text,
+.icon {
   transition: top 0.5s;
 }
 
@@ -238,7 +235,8 @@ input:checked + .slider::after {
   top: 0;
 }
 
-.button:hover:before,.button:hover:after {
+.button:hover:before,
+.button:hover:after {
   opacity: 1;
   visibility: visible;
 }
