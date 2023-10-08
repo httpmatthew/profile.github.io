@@ -56,7 +56,7 @@ nav .button a {
   vertical-align: top; /* Align the divs at the top */
   margin-right: 10px; /* Add some space between the divs (optional) */
   margin-top: 8%;
-  background-color: ; /* Background color for the divs */
+  background-color: none; /* Background color for the divs */
   padding: 20px; /* Add padding to the divs (optional) */
 }
 
