@@ -76,6 +76,7 @@ nav .switch a {
   font-weight: normal;
   font-size: 20px;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .button {
