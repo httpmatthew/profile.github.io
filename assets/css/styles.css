@@ -53,7 +53,7 @@ nav .switch a {
 .landing-page-image {
   display: inline-block;
   width: 45%; /* Adjust the width as needed */
-  vertical-align: top; /* Align the divs at the top */
+  vertical-align: center; /* Align the divs at the top */
   margin-right: 10px; /* Add some space between the divs (optional) */
   margin-top: 8%;
   background-color: none; /* Background color for the divs */
