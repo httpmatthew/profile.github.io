@@ -78,7 +78,7 @@ nav .button a {
   margin: 0;
 }
 
-.home-content button {
+ button {
   --color: #0077ff;
   font-family: inherit;
   display: inline-block;
@@ -95,7 +95,7 @@ nav .button a {
   position: relative;
 }
 
-.home-content button::before {
+ button::before {
   position: absolute;
   content: "";
   background: var(--color);
@@ -105,17 +105,17 @@ nav .button a {
   border-radius: 50%;
 }
 
-.home-content button:hover {
+ button:hover {
   color: white;
 }
 
-.home-content button:before {
+ button:before {
   top: 100%;
   left: 100%;
   transition: .3s all;
 }
 
-.home-content button:hover::before {
+button:hover::before {
   top: -30px;
   left: -30px;
 }
